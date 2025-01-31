@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="music-player">
+    <div class="song-details">
+      <h2 id="song-title">Song Title</h2>
+      <p id="song-artist">Artist</p>
+    </div>
+    
+    <div class="controls">
+      <button id="prev-btn">Previous</button>
+      <button id="play-pause-btn">Play</button>
+      <button id="next-btn">Next</button>
+    </div>
+    
+    <div class="progress-bar">
+      <input type="range" id="progress" value="0" max="100">
+    </div>
+
+    <div class="volume-control">
+      <input type="range" id="volume" value="50" max="100">
+    </div>
+
+    <div class="playlist">
+        <ul id="playlist">
+          <!-- Song items will be dynamically added here -->
+        </ul>
+      </div>
+  </div>
+
+  <audio id="audio" src="Ese wunvise inkuru .mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
